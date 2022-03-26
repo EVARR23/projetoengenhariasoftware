@@ -959,7 +959,45 @@
         <h3><span>Trabalhe conosco</span></h3>
         <p>Envie seu currículo e contato pelo formulário abaixo.</p>
       </div>
-
+      <form action="forms/trabalhe.php" method="post" role="form" class="php-email-form" >
+        <div class="row">
+          <div class="col form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
+          </div>
+          <div class="col form-group">
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Sobrenome" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-group">
+            <input type="date" class="form-control" name="data" id="data" placeholder="Data de Nascimento" required>
+          </div>
+          <div class="col form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-group">
+            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF (Digite somente os numeros)" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})" required>
+          </div>
+          <div class="col form-group">
+            <input type="text" class="form-control" name="fone" id="fone" placeholder="Telefone Fixo c/ DDD"  required>
+          </div>
+          <div class="col form-group">
+            <input type="text" class="form-control" name="celular" id="celular" placeholder="Celular c/ DDD"  required>
+          </div>
+          <div>
+            <label for="myfile">Anexe seu curriculo:</label>
+            <input type="file" id="curriculo" name="curriculo" multiple><br><br>            
+          </div>
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="deficiente">Possui alguma deficiência?</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="deficiente">            
+          </div>
+          <div class="text-center"><button type="submit">Enviar</button></div>
+        </div>
+      </form>
+      
 
     </section>
     <!-- Fim do trabalhe conosco-->
@@ -994,19 +1032,20 @@
               Avenida Edouard Six, 540<br>
               Jardim Paraiba - Jacareí CEP 12327-673<br>
               Sala de Projetos Inova <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> +55 12 98820-0940<br>
+              <strong>Email: </strong>genapps2016@gmail.com<br>
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links Úteis</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre nós</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Serviços</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nosso Time</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contato</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Trabalhe Conosco</a></li>
             </ul>
           </div>
 
